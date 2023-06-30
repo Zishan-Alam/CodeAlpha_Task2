@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Background Generator</h1>
+        <div class="color-pickers">
+            <div class="color-picker">
+                <label for="color1">Color 1:</label>
+                <input type="color" id="color1">
+            </div>
+            <div class="color-picker">
+                <label for="color2">Color 2:</label>
+                <input type="color" id="color2">
+            </div>
+        </div>
+        <div class="gradient-direction">
+            <p>Gradient Direction:</p>
+            <div class="radio-buttons">
+                <input type="radio" id="horizontal" name="direction" value="horizontal" checked>
+                <label for="horizontal">Horizontal</label>
+                <input type="radio" id="vertical" name="direction" value="vertical">
+                <label for="vertical">Vertical</label>
+                <input type="radio" id="diagonal" name="direction" value="diagonal">
+                <label for="diagonal">Diagonal</label>
+            </div>
+        </div>
+        <div class="gradient-type">
+            <p>Gradient Type:</p>
+            <select id="gradient-type">
+                <option value="linear">Linear Gradient</option>
+                <option value="radial">Radial Gradient</option>
+            </select>
+        </div>
+        <button id="generate-btn">Generate</button>
+        <div class="result">
+            <h3>Result:</h3>
+            <div id="result-bg"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
